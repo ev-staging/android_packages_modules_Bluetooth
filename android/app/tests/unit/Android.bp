@@ -4,6 +4,9 @@ package {
 
 java_defaults {
     name: "BluetoothInstrumentationTestsDefaults",
+
+    // We only want this apk build for tests.
+    certificate: "bluetooth",
     defaults: ["framework-bluetooth-tests-defaults"],
 
     min_sdk_version: "current",
